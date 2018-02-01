@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="270.065604">
+<testcase classname="Title of your feature" name="Login Mercury Site" time="61.916834">
+<system-out><![CDATA[Given browser launched and hit the application URL..........................passed
+And user logs in with valid credentials "mercury" and "mercury".............passed
+Then user should see success message........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Title of your feature" name="Login Mercury Site" time="61.601926">
+<system-out><![CDATA[Given browser launched and hit the application URL..........................passed
+And user logs in with valid credentials "mercury" and "mercury".............passed
+Then user should see success message........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Title of your feature" name="Login Mercury Site 2" time="16.146345">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at StepDef.StepDef.user_should_see_success_message(StepDef.java:51)&#13;&#10;&#9;at ✽.Then user should see success message(features.feature:15)&#13;&#10;"><![CDATA[Given browser launched and hit the application URL..........................passed
+And user logs in with valid credentials "mercury" and "mrcury"..............passed
+Then user should see success message........................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at StepDef.StepDef.user_should_see_success_message(StepDef.java:51)
+	at ✽.Then user should see success message(features.feature:15)
+]]></failure>
+</testcase>
+<testcase classname="Title of your feature" name="Login Mercury Site 3" time="47.814812">
+<system-out><![CDATA[Given browser launched and hit the application URL..........................passed
+And user logs in with valid credentials "mercur" and "mercury"..............passed
+Then user should see success message........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Title of your feature" name="Login Mercury Site 4" time="66.414747">
+<system-out><![CDATA[Given browser launched and hit the application URL..........................passed
+And user logs in with valid credentials "mercury" and "mercury".............passed
+Then user should see success message........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Title of your feature" name="Login Mercury Site 5" time="16.17094">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at StepDef.StepDef.user_should_see_success_message(StepDef.java:51)&#13;&#10;&#9;at ✽.Then user should see success message(features.feature:15)&#13;&#10;"><![CDATA[Given browser launched and hit the application URL..........................passed
+And user logs in with valid credentials "mercry" and "mecury"...............passed
+Then user should see success message........................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at StepDef.StepDef.user_should_see_success_message(StepDef.java:51)
+	at ✽.Then user should see success message(features.feature:15)
+]]></failure>
+</testcase>
+</testsuite>

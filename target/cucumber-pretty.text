@@ -1,0 +1,62 @@
+@tag
+Feature: Title of your feature
+  I want to use this template for my feature file
+
+  @tag1
+  Scenario: Login Mercury Site                                      [90m# features.feature:6[0m
+    [32mGiven [0m[32mbrowser launched and hit the application URL[0m              [90m# StepDef.browser_launched_and_hit_the_application_URL()[0m
+    [32mAnd [0m[32muser logs in with valid credentials "[0m[32m[1mmercury[0m[32m" and "[0m[32m[1mmercury[0m[32m"[0m [90m# StepDef.user_logs_in_with_valid_credentials_and(String,String)[0m
+    [32mThen [0m[32muser should see success message[0m                            [90m# StepDef.user_should_see_success_message()[0m
+
+  Scenario Outline: Login Mercury Site                                    [90m# features.feature:12[0m
+    [36mGiven [0m[36mbrowser launched and hit the application URL[0m
+    [36mAnd [0m[36muser logs in with valid credentials "<UserName>" and "<Password>"[0m
+    [36mThen [0m[36muser should see success message[0m
+
+    Examples: 
+
+  @tag
+  Scenario Outline: Login Mercury Site                              [90m# features.feature:19[0m
+    [32mGiven [0m[32mbrowser launched and hit the application URL[0m              [90m# StepDef.browser_launched_and_hit_the_application_URL()[0m
+    [32mAnd [0m[32muser logs in with valid credentials "[0m[32m[1mmercury[0m[32m" and "[0m[32m[1mmercury[0m[32m"[0m [90m# StepDef.user_logs_in_with_valid_credentials_and(String,String)[0m
+    [32mThen [0m[32muser should see success message[0m                            [90m# StepDef.user_should_see_success_message()[0m
+[34mURL at failurehttp://newtours.demoaut.com/mercurysignon.php?osCsid=318598af559f5eb0f8b803cefc0bd864[0m
+
+  @tag
+  Scenario Outline: Login Mercury Site                             [90m# features.feature:20[0m
+    [32mGiven [0m[32mbrowser launched and hit the application URL[0m             [90m# StepDef.browser_launched_and_hit_the_application_URL()[0m
+    [32mAnd [0m[32muser logs in with valid credentials "[0m[32m[1mmercury[0m[32m" and "[0m[32m[1mmrcury[0m[32m"[0m [90m# StepDef.user_logs_in_with_valid_credentials_and(String,String)[0m
+    [31mThen [0m[31muser should see success message[0m                           [90m# StepDef.user_should_see_success_message()[0m
+      [31mjava.lang.AssertionError
+      	at org.junit.Assert.fail(Assert.java:86)
+      	at org.junit.Assert.assertTrue(Assert.java:41)
+      	at org.junit.Assert.assertTrue(Assert.java:52)
+      	at StepDef.StepDef.user_should_see_success_message(StepDef.java:51)
+      	at ✽.Then user should see success message(features.feature:15)
+      [0m
+
+  @tag
+  Scenario Outline: Login Mercury Site                             [90m# features.feature:21[0m
+    [32mGiven [0m[32mbrowser launched and hit the application URL[0m             [90m# StepDef.browser_launched_and_hit_the_application_URL()[0m
+    [32mAnd [0m[32muser logs in with valid credentials "[0m[32m[1mmercur[0m[32m" and "[0m[32m[1mmercury[0m[32m"[0m [90m# StepDef.user_logs_in_with_valid_credentials_and(String,String)[0m
+    [32mThen [0m[32muser should see success message[0m                           [90m# StepDef.user_should_see_success_message()[0m
+
+  @tag
+  Scenario Outline: Login Mercury Site                              [90m# features.feature:22[0m
+    [32mGiven [0m[32mbrowser launched and hit the application URL[0m              [90m# StepDef.browser_launched_and_hit_the_application_URL()[0m
+    [32mAnd [0m[32muser logs in with valid credentials "[0m[32m[1mmercury[0m[32m" and "[0m[32m[1mmercury[0m[32m"[0m [90m# StepDef.user_logs_in_with_valid_credentials_and(String,String)[0m
+    [32mThen [0m[32muser should see success message[0m                            [90m# StepDef.user_should_see_success_message()[0m
+[34mURL at failurehttp://newtours.demoaut.com/mercurysignon.php?osCsid=9881fea9dc2b53b618a7d5b29759c54a[0m
+
+  @tag
+  Scenario Outline: Login Mercury Site                            [90m# features.feature:23[0m
+    [32mGiven [0m[32mbrowser launched and hit the application URL[0m            [90m# StepDef.browser_launched_and_hit_the_application_URL()[0m
+    [32mAnd [0m[32muser logs in with valid credentials "[0m[32m[1mmercry[0m[32m" and "[0m[32m[1mmecury[0m[32m"[0m [90m# StepDef.user_logs_in_with_valid_credentials_and(String,String)[0m
+    [31mThen [0m[31muser should see success message[0m                          [90m# StepDef.user_should_see_success_message()[0m
+      [31mjava.lang.AssertionError
+      	at org.junit.Assert.fail(Assert.java:86)
+      	at org.junit.Assert.assertTrue(Assert.java:41)
+      	at org.junit.Assert.assertTrue(Assert.java:52)
+      	at StepDef.StepDef.user_should_see_success_message(StepDef.java:51)
+      	at ✽.Then user should see success message(features.feature:15)
+      [0m
