@@ -1,5 +1,7 @@
 package StepDef;
 
+import java.io.File;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -61,7 +63,7 @@ public class StepDef {
      	try
      	{
              byte[] screenshot =((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
-             s.embed(screenshot,"image/png");
+             s.embed(screenshot,"new File(\"./ScreenShots/\"+Scenario+\".png\"");
              s.write("URL at failure"+ driver.getCurrentUrl());
      	}catch(WebDriverException wde){
              s.write("Embed Failed"+wde.getMessage());

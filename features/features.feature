@@ -18,9 +18,9 @@ Feature: Title of your feature
     |UserName|Password|
     |mercury |mercury |
     |mercury |mrcury  |
-    |mercur  |mercury |
-    |mercury |mercury |
-    |mercry  |mecury  |
+    #|mercur  |mercury |
+    #|mercury |mercury |
+    #|mercry  |mecury  |
 
     
 
