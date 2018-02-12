@@ -1,11 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: TestRunner.testrunner
 -------------------------------------------------------------------------------
-Tests run: 24, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 271.538 s <<< FAILURE! - in TestRunner.testrunner
-Then user should see success message(| mercury | mrcury |)  Time elapsed: 0.004 s  <<< FAILURE!
+Tests run: 28, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 254.249 s <<< FAILURE! - in TestRunner.testrunner
+Then user should see success message(| mercury | mrcury |)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError
 
-| mercury | mrcury |  Time elapsed: 0.004 s  <<< FAILURE!
+| mercury | mrcury |  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError
 
 Then user should see success message(| mercry | mecury |)  Time elapsed: 0 s  <<< FAILURE!

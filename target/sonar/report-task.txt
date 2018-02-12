@@ -1,0 +1,6 @@
+projectKey=SeleniumCucumberMaven
+serverUrl=http://localhost:9000
+serverVersion=7.0.0.36138
+dashboardUrl=http://localhost:9000/dashboard/index/SeleniumCucumberMaven
+ceTaskId=AWGJjFqxhVa98KNZjxBF
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWGJjFqxhVa98KNZjxBF

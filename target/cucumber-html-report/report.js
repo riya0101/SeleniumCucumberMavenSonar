@@ -8,36 +8,46 @@ formatter.feature({
   "tags": [
     {
       "line": 1,
-      "name": "@tag"
+      "name": "@Regression"
     }
   ]
+});
+formatter.background({
+  "line": 6,
+  "name": "I am on default page",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
 });
 formatter.scenario({
-  "line": 6,
-  "name": "Login Mercury Site",
+  "line": 9,
+  "name": "Login mercury site for a single user using data table",
   "description": "",
-  "id": "title-of-your-feature;login-mercury-site",
+  "id": "title-of-your-feature;login-mercury-site-for-a-single-user-using-data-table",
   "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 5,
-      "name": "@tag1"
-    }
-  ]
+  "keyword": "Scenario"
 });
 formatter.step({
-  "line": 7,
+  "line": 10,
   "name": "browser launched and hit the application URL",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 8,
-  "name": "user logs in with valid credentials \"mercury\" and \"mercury\"",
+  "line": 11,
+  "name": "user enters credentials to login",
+  "rows": [
+    {
+      "cells": [
+        "mercury",
+        "mercury"
+      ],
+      "line": 12
+    }
+  ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
+  "line": 13,
   "name": "user should see success message",
   "keyword": "Then "
 });
@@ -45,7 +55,62 @@ formatter.match({
   "location": "StepDef.browser_launched_and_hit_the_application_URL()"
 });
 formatter.result({
-  "duration": 11942790005,
+  "duration": 12409226242,
+  "status": "passed"
+});
+formatter.match({
+  "location": "StepDef.user_enters_credentials_to_login(DataTable)"
+});
+formatter.result({
+  "duration": 43584416735,
+  "status": "passed"
+});
+formatter.match({
+  "location": "StepDef.user_should_see_success_message()"
+});
+formatter.result({
+  "duration": 66166719,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 2379376568,
+  "status": "passed"
+});
+formatter.background({
+  "line": 6,
+  "name": "I am on default page",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.scenario({
+  "line": 17,
+  "name": "Login Mercury Site by passing direct values",
+  "description": "",
+  "id": "title-of-your-feature;login-mercury-site-by-passing-direct-values",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 18,
+  "name": "browser launched and hit the application URL",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 19,
+  "name": "user logs in with valid credentials \"mercury\" and \"mercury\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 20,
+  "name": "user should see success message",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDef.browser_launched_and_hit_the_application_URL()"
+});
+formatter.result({
+  "duration": 10343999936,
   "status": "passed"
 });
 formatter.match({
@@ -62,121 +127,128 @@ formatter.match({
   "location": "StepDef.user_logs_in_with_valid_credentials_and(String,String)"
 });
 formatter.result({
-  "duration": 47774053756,
+  "duration": 19777770778,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDef.user_should_see_success_message()"
 });
 formatter.result({
-  "duration": 102862725,
+  "duration": 60556719,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2097127288,
+  "duration": 2067525063,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 12,
-  "name": "Login Mercury Site",
+  "line": 23,
+  "name": "Login Mercury Site using differnet testdata",
   "description": "",
-  "id": "title-of-your-feature;login-mercury-site",
+  "id": "title-of-your-feature;login-mercury-site-using-differnet-testdata",
   "type": "scenario_outline",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 13,
+  "line": 24,
   "name": "browser launched and hit the application URL",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 14,
+  "line": 25,
   "name": "user logs in with valid credentials \"\u003cUserName\u003e\" and \"\u003cPassword\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
+  "line": 26,
   "name": "user should see success message",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 16,
+  "line": 27,
   "name": "",
   "description": "",
-  "id": "title-of-your-feature;login-mercury-site;",
+  "id": "title-of-your-feature;login-mercury-site-using-differnet-testdata;",
   "rows": [
     {
       "cells": [
         "UserName",
         "Password"
       ],
-      "line": 18,
-      "id": "title-of-your-feature;login-mercury-site;;1"
+      "line": 29,
+      "id": "title-of-your-feature;login-mercury-site-using-differnet-testdata;;1"
     },
     {
       "cells": [
         "mercury",
         "mercury"
       ],
-      "line": 19,
-      "id": "title-of-your-feature;login-mercury-site;;2"
+      "line": 30,
+      "id": "title-of-your-feature;login-mercury-site-using-differnet-testdata;;2"
     },
     {
       "cells": [
         "mercury",
         "mrcury"
       ],
-      "line": 20,
-      "id": "title-of-your-feature;login-mercury-site;;3"
+      "line": 31,
+      "id": "title-of-your-feature;login-mercury-site-using-differnet-testdata;;3"
     },
     {
       "cells": [
         "mercur",
         "mercury"
       ],
-      "line": 21,
-      "id": "title-of-your-feature;login-mercury-site;;4"
+      "line": 32,
+      "id": "title-of-your-feature;login-mercury-site-using-differnet-testdata;;4"
     },
     {
       "cells": [
         "mercury",
         "mercury"
       ],
-      "line": 22,
-      "id": "title-of-your-feature;login-mercury-site;;5"
+      "line": 33,
+      "id": "title-of-your-feature;login-mercury-site-using-differnet-testdata;;5"
     },
     {
       "cells": [
         "mercry",
         "mecury"
       ],
-      "line": 23,
-      "id": "title-of-your-feature;login-mercury-site;;6"
+      "line": 34,
+      "id": "title-of-your-feature;login-mercury-site-using-differnet-testdata;;6"
     }
   ],
   "keyword": "Examples"
 });
-formatter.scenario({
-  "line": 19,
-  "name": "Login Mercury Site",
+formatter.background({
+  "line": 6,
+  "name": "I am on default page",
   "description": "",
-  "id": "title-of-your-feature;login-mercury-site;;2",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.scenario({
+  "line": 30,
+  "name": "Login Mercury Site using differnet testdata",
+  "description": "",
+  "id": "title-of-your-feature;login-mercury-site-using-differnet-testdata;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
       "line": 1,
-      "name": "@tag"
+      "name": "@Regression"
     }
   ]
 });
 formatter.step({
-  "line": 13,
+  "line": 24,
   "name": "browser launched and hit the application URL",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 14,
+  "line": 25,
   "name": "user logs in with valid credentials \"mercury\" and \"mercury\"",
   "matchedColumns": [
     0,
@@ -185,7 +257,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
+  "line": 26,
   "name": "user should see success message",
   "keyword": "Then "
 });
@@ -193,7 +265,7 @@ formatter.match({
   "location": "StepDef.browser_launched_and_hit_the_application_URL()"
 });
 formatter.result({
-  "duration": 9819059825,
+  "duration": 11232222182,
   "status": "passed"
 });
 formatter.match({
@@ -210,41 +282,48 @@ formatter.match({
   "location": "StepDef.user_logs_in_with_valid_credentials_and(String,String)"
 });
 formatter.result({
-  "duration": 49222500206,
+  "duration": 22415351601,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDef.user_should_see_success_message()"
 });
 formatter.result({
-  "duration": 59151163,
+  "duration": 63148319,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2501214540,
+  "duration": 2124443469,
   "status": "passed"
 });
-formatter.scenario({
-  "line": 20,
-  "name": "Login Mercury Site",
+formatter.background({
+  "line": 6,
+  "name": "I am on default page",
   "description": "",
-  "id": "title-of-your-feature;login-mercury-site;;3",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.scenario({
+  "line": 31,
+  "name": "Login Mercury Site using differnet testdata",
+  "description": "",
+  "id": "title-of-your-feature;login-mercury-site-using-differnet-testdata;;3",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
       "line": 1,
-      "name": "@tag"
+      "name": "@Regression"
     }
   ]
 });
 formatter.step({
-  "line": 13,
+  "line": 24,
   "name": "browser launched and hit the application URL",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 14,
+  "line": 25,
   "name": "user logs in with valid credentials \"mercury\" and \"mrcury\"",
   "matchedColumns": [
     0,
@@ -253,7 +332,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
+  "line": 26,
   "name": "user should see success message",
   "keyword": "Then "
 });
@@ -261,7 +340,7 @@ formatter.match({
   "location": "StepDef.browser_launched_and_hit_the_application_URL()"
 });
 formatter.result({
-  "duration": 11318391304,
+  "duration": 10566508941,
   "status": "passed"
 });
 formatter.match({
@@ -278,44 +357,50 @@ formatter.match({
   "location": "StepDef.user_logs_in_with_valid_credentials_and(String,String)"
 });
 formatter.result({
-  "duration": 2164801742,
+  "duration": 2051936349,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDef.user_should_see_success_message()"
 });
 formatter.result({
-  "duration": 216393005,
-  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat StepDef.StepDef.user_should_see_success_message(StepDef.java:51)\r\n\tat ✽.Then user should see success message(features.feature:15)\r\n",
+  "duration": 73133388,
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat StepDef.LoginPageStepDef.verify_text(LoginPageStepDef.java:53)\r\n\tat StepDef.StepDef.user_should_see_success_message(StepDef.java:31)\r\n\tat ✽.Then user should see success message(features.feature:26)\r\n",
   "status": "failed"
 });
-formatter.embedding("image/png", "embedded0.png");
-formatter.write("URL at failurehttp://newtours.demoaut.com/mercurysignon.php?osCsid\u003d318598af559f5eb0f8b803cefc0bd864");
+formatter.write("URL at failurehttp://newtours.demoaut.com/mercurysignon.php?osCsid\u003db3a19ed5448ef162e89947cc6ac209fb");
 formatter.after({
-  "duration": 2446758666,
+  "duration": 2655034159,
   "status": "passed"
 });
-formatter.scenario({
-  "line": 21,
-  "name": "Login Mercury Site",
+formatter.background({
+  "line": 6,
+  "name": "I am on default page",
   "description": "",
-  "id": "title-of-your-feature;login-mercury-site;;4",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.scenario({
+  "line": 32,
+  "name": "Login Mercury Site using differnet testdata",
+  "description": "",
+  "id": "title-of-your-feature;login-mercury-site-using-differnet-testdata;;4",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
       "line": 1,
-      "name": "@tag"
+      "name": "@Regression"
     }
   ]
 });
 formatter.step({
-  "line": 13,
+  "line": 24,
   "name": "browser launched and hit the application URL",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 14,
+  "line": 25,
   "name": "user logs in with valid credentials \"mercur\" and \"mercury\"",
   "matchedColumns": [
     0,
@@ -324,7 +409,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
+  "line": 26,
   "name": "user should see success message",
   "keyword": "Then "
 });
@@ -332,7 +417,7 @@ formatter.match({
   "location": "StepDef.browser_launched_and_hit_the_application_URL()"
 });
 formatter.result({
-  "duration": 10912313786,
+  "duration": 10187034316,
   "status": "passed"
 });
 formatter.match({
@@ -349,41 +434,48 @@ formatter.match({
   "location": "StepDef.user_logs_in_with_valid_credentials_and(String,String)"
 });
 formatter.result({
-  "duration": 34662808891,
+  "duration": 7069395831,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDef.user_should_see_success_message()"
 });
 formatter.result({
-  "duration": 93683346,
+  "duration": 106134858,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2146006405,
+  "duration": 2102170667,
   "status": "passed"
 });
-formatter.scenario({
-  "line": 22,
-  "name": "Login Mercury Site",
+formatter.background({
+  "line": 6,
+  "name": "I am on default page",
   "description": "",
-  "id": "title-of-your-feature;login-mercury-site;;5",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.scenario({
+  "line": 33,
+  "name": "Login Mercury Site using differnet testdata",
+  "description": "",
+  "id": "title-of-your-feature;login-mercury-site-using-differnet-testdata;;5",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
       "line": 1,
-      "name": "@tag"
+      "name": "@Regression"
     }
   ]
 });
 formatter.step({
-  "line": 13,
+  "line": 24,
   "name": "browser launched and hit the application URL",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 14,
+  "line": 25,
   "name": "user logs in with valid credentials \"mercury\" and \"mercury\"",
   "matchedColumns": [
     0,
@@ -392,7 +484,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
+  "line": 26,
   "name": "user should see success message",
   "keyword": "Then "
 });
@@ -400,7 +492,7 @@ formatter.match({
   "location": "StepDef.browser_launched_and_hit_the_application_URL()"
 });
 formatter.result({
-  "duration": 9640124025,
+  "duration": 11555528357,
   "status": "passed"
 });
 formatter.match({
@@ -417,41 +509,48 @@ formatter.match({
   "location": "StepDef.user_logs_in_with_valid_credentials_and(String,String)"
 });
 formatter.result({
-  "duration": 55232549947,
+  "duration": 22787639560,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDef.user_should_see_success_message()"
 });
 formatter.result({
-  "duration": 109293080,
+  "duration": 86155433,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1432780004,
+  "duration": 2196875301,
   "status": "passed"
 });
-formatter.scenario({
-  "line": 23,
-  "name": "Login Mercury Site",
+formatter.background({
+  "line": 6,
+  "name": "I am on default page",
   "description": "",
-  "id": "title-of-your-feature;login-mercury-site;;6",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.scenario({
+  "line": 34,
+  "name": "Login Mercury Site using differnet testdata",
+  "description": "",
+  "id": "title-of-your-feature;login-mercury-site-using-differnet-testdata;;6",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
       "line": 1,
-      "name": "@tag"
+      "name": "@Regression"
     }
   ]
 });
 formatter.step({
-  "line": 13,
+  "line": 24,
   "name": "browser launched and hit the application URL",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 14,
+  "line": 25,
   "name": "user logs in with valid credentials \"mercry\" and \"mecury\"",
   "matchedColumns": [
     0,
@@ -460,7 +559,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
+  "line": 26,
   "name": "user should see success message",
   "keyword": "Then "
 });
@@ -468,7 +567,7 @@ formatter.match({
   "location": "StepDef.browser_launched_and_hit_the_application_URL()"
 });
 formatter.result({
-  "duration": 11423034562,
+  "duration": 12021367171,
   "status": "passed"
 });
 formatter.match({
@@ -485,21 +584,20 @@ formatter.match({
   "location": "StepDef.user_logs_in_with_valid_credentials_and(String,String)"
 });
 formatter.result({
-  "duration": 1823023387,
+  "duration": 2243261085,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDef.user_should_see_success_message()"
 });
 formatter.result({
-  "duration": 34420716,
-  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat StepDef.StepDef.user_should_see_success_message(StepDef.java:51)\r\n\tat ✽.Then user should see success message(features.feature:15)\r\n",
+  "duration": 64193564,
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat StepDef.LoginPageStepDef.verify_text(LoginPageStepDef.java:53)\r\n\tat StepDef.StepDef.user_should_see_success_message(StepDef.java:31)\r\n\tat ✽.Then user should see success message(features.feature:26)\r\n",
   "status": "failed"
 });
-formatter.embedding("image/png", "embedded1.png");
-formatter.write("URL at failurehttp://newtours.demoaut.com/mercurysignon.php?osCsid\u003d9881fea9dc2b53b618a7d5b29759c54a");
+formatter.write("URL at failurehttp://newtours.demoaut.com/mercurysignon.php?osCsid\u003d906e1cfbc72ae72d16c6d991dd424e66");
 formatter.after({
-  "duration": 2890461078,
+  "duration": 2489098405,
   "status": "passed"
 });
 });

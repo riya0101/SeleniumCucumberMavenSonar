@@ -2,7 +2,15 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.selenium.cucumber.maven</groupId>
   <artifactId>SeleniumCucumberMaven</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1-SNAPSHOT</version> 
+ 
+ <properties>
+              <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+              <sonar.projectKey>SeleniumCucumberMaven</sonar.projectKey>
+              <sonar.projectName>SeleniumCucumberMaven</sonar.projectName>
+              <sonar.projectVersion>1.0</sonar.projectVersion>
+ </properties>
+ 
  
 	<dependencies>
 		  <dependency>
@@ -27,7 +35,16 @@
 		    <artifactId>selenium-java</artifactId>
 		    <version>3.3.1</version>
 		</dependency>
-
+		<dependency>
+    		<groupId>com.vimalselvam</groupId>
+    		<artifactId>cucumber-extentsreport</artifactId>
+   			 <version>3.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>3.1.2</version>
+		</dependency>	
 	</dependencies>
 	<build>
 		<plugins>
@@ -50,6 +67,12 @@
 	                <target>1.8</target>
            	    </configuration>
 			</plugin>
+			<plugin>
+                           <groupId>org.sonarsource.scanner.maven</groupId>
+                           <artifactId>sonar-maven-plugin</artifactId>
+                           <version>3.4.0.905</version>
+                     </plugin>
+			
 		</plugins>
 	</build>
 </project>
